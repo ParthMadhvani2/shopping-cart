@@ -1,4 +1,4 @@
-const Product = () => {
+const Product = ({post}) => {
   return (
     <div>
       <div>
@@ -8,14 +8,14 @@ const Product = () => {
         <p>{post.description}</p>
       </div>
       <div>
-        <img src= `${post.image}` />
+        <img src={post.image} />
       </div>
       <div>
         <p>{post.price}</p>
       </div>
       <button>
         {
-          selected ? <p>Removed Item</p>
+          false ? <p>Remove Item</p> : <p>Add to Cart</p>
         }
       </button>
     </div>
