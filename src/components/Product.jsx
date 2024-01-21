@@ -55,6 +55,8 @@ const Product = ({post}) => {
           </button>)
         }
       </div>
+     
+
     </div>
   );
 };
